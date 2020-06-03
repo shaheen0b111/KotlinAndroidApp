@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/precaution_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRECAUTIONS->>"
+        android:textAlignment="center"
+        android:textColor="#00BCD4"
+        android:textSize="26sp" />
+
+    <ScrollView
+        android:id="@+id/scrollID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/precaution_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="italic" />
+    </ScrollView>
+</LinearLayout>
