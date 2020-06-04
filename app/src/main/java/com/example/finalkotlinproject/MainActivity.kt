@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(precaution_intent)
         }
         help_button.setOnClickListener(){
+            val help_intent = Intent(this,ExploreHelp::class.java)
+            startActivity(help_intent)
         }
     }
 }
