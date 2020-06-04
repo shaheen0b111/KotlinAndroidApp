@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/precaution_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="#1E1C1C"
         android:text="@string/precautions"
         android:textAlignment="center"
         android:textColor="#00BCD4"
-        android:textSize="26sp" />
+        android:textSize="30sp" />
 
     <ScrollView
         android:id="@+id/scrollID"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
         android:fillViewport="true"
-        android:scrollbars="vertical"
-        android:background="@color/colorPrimary">
+        android:scrollbars="vertical">
 
         <TextView
             android:id="@+id/precaution_text"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_weight="1.0"
             android:textAlignment="viewStart"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
