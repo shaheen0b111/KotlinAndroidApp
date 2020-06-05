@@ -18,7 +18,7 @@ class HelpAdapter(val context: Context, private val helpnumbers:ArrayList<HelpNu
     override fun getItemCount(): Int = helpnumbers.size
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        holder.itemView.help_name.text = helpnumbers[position].hName + "-->"
+        holder.itemView.help_name.text = helpnumbers[position].hName
         holder.itemView.help_number.text = helpnumbers[position].hNumber
 
     }

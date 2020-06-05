@@ -9,6 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#1E1C1C"
+        android:fontFamily="serif-monospace"
+        android:padding="10sp"
         android:text="@string/precautions"
         android:textAlignment="center"
         android:textColor="#00BCD4"
@@ -18,6 +20,10 @@
         android:id="@+id/scrollID"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
         android:fillViewport="true"
         android:scrollbars="vertical">
@@ -26,12 +32,9 @@
             android:id="@+id/precaution_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1.0"
+            android:fontFamily="serif-monospace"
             android:textAlignment="viewStart"
             android:textColor="#FFFFFF"
-            android:textSize="40sp"
-            android:textStyle="italic" />
+            android:textSize="40sp" />
     </ScrollView>
 </LinearLayout>
