@@ -124,8 +124,10 @@
   - Stats Button:
     - The redirection give the basic stats of total,current,death cases(data is refered and not live data) of countries
     - The status button pop-ups the window showing status is critical or not critical based total cases evaluation
+    (Picasso is used to load images of countries flags though url's, Hence require internet)
   - Precaution Button:
     - The redirection give the list of steps that can be followed to prevent the infection
   - Help Button:
     - The redirection give the list of emergency numbers of different State and Union Territory of India. 
     - On clicking to any number of respective State/Union Territory it redirect to make a Phone call
+   
