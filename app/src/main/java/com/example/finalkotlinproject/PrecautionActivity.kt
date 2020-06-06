@@ -10,7 +10,7 @@ class PrecautionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.precaution_main)
 
-        precaution_text.text = "*To prevent the spread of COVID-19:\n\n" +
+        precaution_text.text = "->>To prevent the spread of COVID-19:\n\n" +
                 "*Clean your hands often. Use soap and water, or an alcohol-based hand rub.\n\n" +
                 "*Maintain a safe distance from anyone who is coughing or sneezing.\n\n" +
                 "*Don’t touch your eyes, nose or mouth.\n\n" +
