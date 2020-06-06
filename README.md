@@ -90,3 +90,42 @@
     - Filter condition is added in `{}` and `it` refers to each item of String
     - Eg:
       `val totalCase  = h.itemView.description1.text.toString().filter { it.isDigit() }`
+9. ***Interface***
+	- Package Name:
+	    - package com.example.finalkotlinproject.HelpAdapter
+	- Here the method onRequestPermissionsResult() of interface 'OnRequestPermissionsResultCallback' from class 'ActivityCompat' is implemented
+	- Eg:
+	```
+	class HelpAdapter(val context: Context, private val helpnumbers:ArrayList<HelpNumbers>,val requestCall: Int) :  RecyclerView.Adapter<RecyclerView.ViewHolder>(),ActivityCompat.OnRequestPermissionsResultCallback
+	override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray)        
+	{
+	   if(requestCode == requestCall) makeCall()
+	}
+	```
+
+10. ***Annotation***
+	- Package Name: 
+	    - package com.example.finalkotlinproject.HelpAdapter
+	- SuppressLint annotation specifies that for the given function ignore the specified Warnings given in the String form
+	- Eg:
+	  ```
+	  @SuppressLint("MissingPermission")
+          private fun makeCall(){
+           val callIn = Intent(Intent.ACTION_CALL)
+           callIn.data = Uri.parse("tel:" + callNumber)
+           mContext.startActivity(callIn)
+          }
+	  ```
+
+## Working of App:
+
+- ***Name***: COVID19-STATUS
+- ***Description***:
+  - Stats Button:
+    - The redirection give the basic stats of total,current,death cases(data is refered and not live data) of countries
+    - The status button pop-ups the window showing status is critical or not critical based total cases evaluation
+  - Precaution Button:
+    - The redirection give the list of steps that can be followed to prevent the infection
+  - Help Button:
+    - The redirection give the list of emergency numbers of different State and Union Territory of India. 
+    - On clicking to any number of respective State/Union Territory it redirect to make a Phone call
