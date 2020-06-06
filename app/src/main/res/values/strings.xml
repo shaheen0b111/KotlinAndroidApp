@@ -2,5 +2,5 @@
     <string name="app_name">COVID-19 STATUS</string>
     <string name="precautions"><![CDATA[PRECAUTIONS->>]]></string>
     <string name="state_helpline_no">State Helpline No.</string>
-    <string name="state_ut"><![CDATA[State / UT -->]]></string>
+    <string name="state_ut"><![CDATA[State / UT ]]></string>
 </resources>

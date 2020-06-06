@@ -28,7 +28,7 @@
             android:textAlignment="center"
             android:textColor="#00BCD4"
             android:textSize="25sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/help_number2"
@@ -37,7 +37,7 @@
             android:layout_weight="1"
             android:background="@color/colorAccent"
             android:text="@string/state_helpline_no"
-            android:textAlignment="textStart"
+            android:textAlignment="viewEnd"
             android:textColor="#00BCD4"
             android:textSize="25sp"
             android:textStyle="bold" />

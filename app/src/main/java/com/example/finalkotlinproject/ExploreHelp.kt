@@ -13,9 +13,9 @@ class ExploreHelp : AppCompatActivity(){
         setContentView(R.layout.help_main)
         val linearLayoutManager = LinearLayoutManager(this)
         help_recyclerview_main.layoutManager = linearLayoutManager
-
         val numberList = NumberList()
-        help_recyclerview_main.adapter = HelpAdapter(this,numberList)
+        val requestCall = 1
+        help_recyclerview_main.adapter = HelpAdapter(this,numberList,requestCall)
     }
     fun NumberList() : ArrayList<HelpNumbers> {
         val n = ArrayList<HelpNumbers>()
