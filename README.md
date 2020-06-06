@@ -90,6 +90,32 @@
     - Filter condition is added in `{}` and `it` refers to each item of String
     - Eg:
       `val totalCase  = h.itemView.description1.text.toString().filter { it.isDigit() }`
+9. ***Interface***
+	- Package Name:
+	    - package com.example.finalkotlinproject.HelpAdapter
+	- Here the method onRequestPermissionsResult() of interface 'OnRequestPermissionsResultCallback' from class 'ActivityCompat' is implemented
+	- Eg:
+	```
+	class HelpAdapter(val context: Context, private val helpnumbers:ArrayList<HelpNumbers>,val requestCall: Int) :  RecyclerView.Adapter<RecyclerView.ViewHolder>(),ActivityCompat.OnRequestPermissionsResultCallback
+	override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray)        
+	{
+	   if(requestCode == requestCall) makeCall()
+	}
+	```
+
+10. ***Annotation***
+	- Package Name: 
+	    - package com.example.finalkotlinproject.HelpAdapter
+	- SuppressLint annotation specifies that for the given function ignore the specified Warnings given in the String form
+	- Eg:
+	  ```
+	  @SuppressLint("MissingPermission")
+          private fun makeCall(){
+           val callIn = Intent(Intent.ACTION_CALL)
+           callIn.data = Uri.parse("tel:" + callNumber)
+           mContext.startActivity(callIn)
+          }
+	  ```
 
 ## Working of App:
 
