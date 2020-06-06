@@ -90,3 +90,16 @@
     - Filter condition is added in `{}` and `it` refers to each item of String
     - Eg:
       `val totalCase  = h.itemView.description1.text.toString().filter { it.isDigit() }`
+
+## Working of App:
+
+- ***Name***: COVID19-STATUS
+- ***Description***:
+  - Stats Button:
+    - The redirection give the basic stats of total,current,death cases(data is refered and not live data) of countries
+    - The status button pop-ups the window showing status is critical or not critical based total cases evaluation
+  - Precaution Button:
+    - The redirection give the list of steps that can be followed to prevent the infection
+  - Help Button:
+    - The redirection give the list of emergency numbers of different State and Union Territory of India. 
+    - On clicking to any number of respective State/Union Territory it redirect to make a Phone call
